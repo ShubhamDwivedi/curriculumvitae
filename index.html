@@ -1,0 +1,224 @@
+<html>
+ <head>
+   <link href="https://fonts.googleapis.com/css?family=Orbitron|Pacifico" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title></title> 
+   
+</head>
+<body>
+<div id="header">
+<p id="name">SHUBHAM DWIVEDI</p>
+         <a href="mailto:dwivedishubham05@gmail.com" target="_blank"><p id="email">dwivedishubham05@gmail.com</p></a>
+     </div>
+     <div class="left">
+     </div>
+     <div class="right">
+            <h3>About</h3>
+            <p>
+            <ul>
+                <li>I’m an accomplished person with a background in Web Development as well as Desktop Application
+				Development Technologies of more than three and half years.</li> 
+				<li>Being a quick learner i have an in-depth knowledge of development and
+				maintenance. I am looking forward to expand my experience within a role
+				that combines new builds as well as products that can enhance and
+				upgrade my skills to desired role.</li>
+            </ul>
+            </p>
+			<h3>CV Highlights</h3>
+            <p>
+            <ul>
+                <li>Currently going through ADOBE ANALYTICS Trainning Programme</li>
+                <li>Learnt HTML, CSS, Scripting, Xaml, MS Presentation  Photoshop, CorelDraw, Telerik & Wpf through my work experience </li>
+                <li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I have taken or I am taking as of now independently through online platforms and collaborating with multiple industries.</li>
+                <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li></ul>
+            </p>
+            <h3>Professional Experience</h3>
+            <h4 id="company-name">TCS (BFSI Domain) on payroll of IDC Technologies (Contractual Position)</h4>
+            <p>(June 2018 - July 2018)</p>
+			<p id="job-title"><strong>System Engineer (UI)</strong></p>
+			<p></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
+            <ul>
+                <li>Design the UI section of desktop Applications into Telerik Controls And WPF Using XAML</li>
+                <li>Interact with our engineering team to get software issues and bugs resolved</li>
+				<li>Coming up with creative ideas on modification and revamping of the existing systems for RBI and Stock markets</li>
+                <li>Contribute ideas to the team on how design can be revamped and a more interactive producted could be created</li></ul>
+            </p>
+			<h4 id="company-name">Solo Luxury</h4>
+			<p>(September 2017 - April 2018)</p>
+            <p id="job-title"><strong>Wwbsite Manager & UI Developer</strong></p>
+			<p></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
+            <ul>
+                <li>Design the UI section of E-Commerce Application onto Magento</li>
+				<li>Coming up with creative ideas on UI Design</li>
+                
+            </p>
+			<h4 id="company-name">T.Tantra Joy Process Ltd</h4>
+			<p>(January 2017 - September 2018)</p>
+            <p id="job-title"><strong>Wwbsite Manager & UI Developer</strong></p>
+			<p></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
+            <ul>
+                <li>Design the UI section of E-Commerce Applications and Portals</li>
+				<li>Coming up with creative ideas on UI Design</li>
+                
+            </p>
+            <h3>Educational Qualifications</h3>
+            <table>
+                <tr id="heading">
+                    <td>Qualification</td>
+                    <td>Board</td>
+                    <td>Percentage / Grades</td>
+                    <td>Year</td>
+                </tr>
+                <tr>
+                    <td>S.S.C</td>
+                    <td>ICSE</td>
+                    <td>69%</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>H.S.C (Science Stream)</td>
+                    <td>PSEB</td>
+                    <td>60%</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>BCA (Bachelors Of Computer Applications)</td>
+                    <td>G.N.D.U (Guru Nanak Dev UNiversity), Amritsar, India</td>
+                    <td>A Grade</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>MCA (Masters Of Computer Applications)</td>
+                    <td>G.N.D.U (Guru Nanak Dev UNiversity), Amritsar, India</td>
+                    <td>7.1 CGPA</td>
+                    <td>2017</td>
+                </tr>
+                
+            </table>
+            
+  
+            
+            <h3>Technical Skills</h3>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Enter your Skills</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul1 id="myUL1">
+  <li1>Css</li1>
+  <li1>Css3</li1>
+</ul1>
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI1");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI1') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li1 = document.createElement("li1");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li1.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL1").appendChild(li1);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+
+
+
+  
+  
+            <p>
+            <ul>
+            
+                <li>
+                <span id="course-name">Application Software:</span> MS-Office, Excel, Dreamweaver, Sublime Text, Turtoise Version Control</li>
+                <li>
+                <span id="course-name">Programming Skills:</span>HTML, CSS, Bootstrap, Xaml, Telerik, WPF,Photoshop, C and C++</li></ul>
+            </p>
+            <h3>Certifications / Awards:</h3>
+            <p>
+            <ul>
+                <li>Certified in JAVA SE6 from NIIT Oracle Partner</li>
+                <li>Sangeet Vibhushan in classical flute from pracheen kala kendra chandigarh</li>
+                </ul>
+            </p>
+            <h3>Personal Information:</h3>
+            <p>
+            <ul>
+                <li>
+                A young, determined hard and smart working person. I believe in task based roles and complete ownership of work.
+                <li>
+                <span id="course-name">Languages Known:</span>English, Hindi, Punjabi</li>
+                <li>
+                <span id="course-name">Hobbies:</span>Classical Music, Playing Flute, swimming, Meditation, Reading.</li> </ul>
+            </p>
+            <h3>Other Information</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">Expected Salary:</span> 7 Lac +</li>
+                <li>
+                <span id="course-name">Area of Interest:</span>Software Development, Programming, Start-ups, Coding, App Development, Designing, Ui</li>
+                <li>
+                <span id="course-name">Joining Date:</span>Immediate</li></ul>
+            </p>
+            <h3>Declaration</h3>
+            <p>
+            I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
+     </div>
+     <div id="footer"></div>
+    </body>
+</html>
